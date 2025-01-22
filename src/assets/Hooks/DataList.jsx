@@ -21,7 +21,7 @@ function DataList(url) {
         fetchData()
     },[url])
 
-  return { data, loading, errors }
+  return { data, setData, loading, errors }
 }
 
 export default DataList
