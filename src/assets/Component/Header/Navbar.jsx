@@ -9,6 +9,7 @@ function Navbar() {
             <Link to={'/'} className='text-3xl ps-24 font-medium'> Logo </Link>
           <ul id="nav-mobile" className="flex space-x-4">
             <Link to={'/'} className=''> Product </Link>
+            <Link to={'/create'} className=''>Create Product  </Link>
           </ul>
         </div>
       </nav>
