@@ -2,6 +2,7 @@ import React from "react";
 import DataList from "../../Hooks/DataList";
 import Delete from "../../Hooks/Delete";
 
+
 function ProductList() {
   // Data Fetching Function
   const url = "http://127.0.0.1:8000/product/";
@@ -14,6 +15,7 @@ function ProductList() {
     dataDelete(id); 
     setData(data.filter((item) => item.id !== id));  
   };
+
 
 
   return (
@@ -36,7 +38,7 @@ function ProductList() {
                 /> */}
                 <div className="grid grid-cols-2 gap-5">
                   <div>
-                    <p className="font-semibold">{item.title}</p>
+                    <p className="font-semibold">{item.product_name}</p>
                     {/* <p className="text-sm text-gray-600">{item.description}</p> */}
                   </div>
                   <div className="flex justify-between items-center">
