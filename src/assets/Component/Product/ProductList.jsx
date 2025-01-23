@@ -38,7 +38,7 @@ function ProductList() {
                 /> */}
                 <div className="grid grid-cols-2 gap-5">
                   <div>
-                    <p className="font-semibold">{item.product_name}</p>
+                    <p className="font-semibold">{item.title}</p>
                     {/* <p className="text-sm text-gray-600">{item.description}</p> */}
                   </div>
                   <div className="flex justify-between items-center">
