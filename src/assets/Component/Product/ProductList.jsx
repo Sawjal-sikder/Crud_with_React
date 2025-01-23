@@ -5,11 +5,11 @@ import Delete from "../../Hooks/Delete";
 
 function ProductList() {
   // Data Fetching Function
-  const url = "http://127.0.0.1:8000/product/";
+  const url = "https://api.nmmbd.com/product/";
   const { data, setData, loading, errors } = DataList(url);
 
   // Data Delete Function
-  const deleterUrl = "http://127.0.0.1:8000/product";
+  const deleterUrl = "https://api.nmmbd.com/product";
   const { dataDelete } = Delete(deleterUrl);
   const handleDelete = (id) => {
     dataDelete(id); 
